@@ -62,20 +62,13 @@ int main() {
 	}
 	int target;
 	cin >> target;
-	int i = 0;
-	int j = v.size() - 1;
-	while (i < j) {
-		int sum = v[i] + v[j];
-		if (sum == target) {
-			cout << v[i] << endl;
-			cout << v[j] << endl;
-			return 0;
-		}
-		else if (sum < target) {
-			i++;
-		}
-		else {
-			j--;
+	for (int i = 0; i < n; i++) {
+		for (int j = i + 1; j < n; j++) {
+			if (v[i] + v[j] == target) {
+				cout << v[i] << endl;
+				cout << v[j] << endl;
+				return 0;
+			}
 		}
 	}
 	return 0;
