@@ -67,10 +67,14 @@ int main() {
 			}
 			else {
 				score += s[i] - '0';
-				first += s[i] - '0';
-				if (second == 0) {
-					second = first;
+				if (first == 0) {
+					first = s[i] - '0';
+				}
+				else {
+					second = s[i] - '0';
+					score += second;
 					first = 0;
+					second = 0;
 				}
 			}
 			if (frame == 10) {
