@@ -39,15 +39,18 @@ int main() {
 
 	string s;
 	cin >> s;
-	int n = s.length();
+	string result = "";
 	int i = 0;
-	while (i < n) {
+	while (i < s.length()) {
 		if (s[i] == '-') {
-			s[i + 1] = toupper(s[i + 1]);
+			result += toupper(s[i + 1]);
+			i += 2;
+		}
+		else {
+			result += s[i];
 			i++;
 		}
-		i++;
 	}
-	cout << s << endl;
+	cout << result << endl;
 	return 0;
 }
