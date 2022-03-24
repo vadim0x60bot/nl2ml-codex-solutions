@@ -17,19 +17,19 @@ fizz-buzz
 Given an integer x, return "Fizz" if x is divisible by 3, "Buzz" if x is divisible by 5, "FizzBuzz" if xis divisible by 3 and 5, and a string version of x if none of the above hold.
 
 For example: 
-> 5
+> 1
+1
+
+> 17
+17
+
+> 20
 Buzz
 
-> 7
-7
+> 4
+4
 
-> 9
-Fizz
-
-> 16
-16
-
-> 10
+> 50000
 Buzz
 
 
